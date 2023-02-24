@@ -64,7 +64,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 // function to initialize program
@@ -74,7 +74,7 @@ function init() {
     // fs.writeFile('README.md', generateMarkdown({ ...answers }), (err) =>
     //   err ? console.log(err) : console.log('Successfully created index.html!')
     // );
-    writeToFile("README1.md", generateMarkdown({ ...answers }));
+    writeToFile("Generator-Readme.md", generateMarkdown({ ...answers }));
   });
 }
 
