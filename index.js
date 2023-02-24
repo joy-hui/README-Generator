@@ -1,7 +1,14 @@
-const fs = require("fs");
-const path = require("path");
-const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+// const fs = require("fs");
+// const path = require("path");
+// const inquirer = require("inquirer");
+//const generateMarkdown = require("./utils/generateMarkdown");
+
+import  inquirer from "inquirer";  // use other way add module in package.json  "type":"module", 
+import  fs from "fs";
+import  path from "path";
+import  generateMarkdown from "./utils/generateMarkdown.js";
+
+///Users/huizhao/bootcamp/README-Generator/utils/generateMarkdown.js
 
 // array of questions for user
 const questions = [
