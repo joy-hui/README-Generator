@@ -1,56 +1,55 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-    return `
-    # ${data.name}
-    ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
-    ## Description
+export function generateMarkdown(data) {
+return `
+# ${data.name}
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+## Description
 
-    ${data.description}
+${data.description}
 
-    ## Table of Contents 
+## Table of Contents 
 
-    * [Installation](#installation)
+* [Installation](#installation)
 
-    * [Usage](#usage)
+* [Usage](#usage)
 
-    * [License](#License)
+* [License](#license)
 
-    * [Contributing](#contributing)
+* [Contributing](#contributing)
 
-    * [Tests](#tests)
+* [Tests](#tests)
 
-    * [Questions](#questions)
+* [Questions](#questions)
 
-    ## Installation
+## Installation
 
-    The command should be run to install dependencies:
+The command should be run to install dependencies:
 
-    * ${data.install}
+* ${data.install}
 
-    ## Usage
+## Usage
 
-    ${data.use}
+${data.use}
 
-    ## License
+## License
 
-    ${data.license}
+${data.license}
   
-    ## Contributing
+## Contributing
 
-    ${data.contribute}
+${data.contribute}
 
-    ## Tests
+## Tests
 
-    The command should be run to run tests:
+The command should be run to run tests:
 
-    * ${data.test}
+* ${data.test}
 
-    ## Questions
+## Questions
 
-    If you have any questions please contact me, my email address is ${data.email}. 
-    This is my github: [${data.github}](https://github.com/${ data.github }/).
+If you have any questions please contact me, my email address is ${data.email}. 
+This is my github: [${data.github}](https://github.com/${data.github}/).
   `;
-  }
-  
-  module.exports = generateMarkdown;
-  
+}
+
+//module.exports = generateMarkdown;

@@ -3,10 +3,10 @@
 // const inquirer = require("inquirer");
 //const generateMarkdown = require("./utils/generateMarkdown");
 
-import  inquirer from "inquirer";  // use other way add module in package.json  "type":"module", 
-import  fs from "fs";
-import  path from "path";
-import  generateMarkdown from "./utils/generateMarkdown.js";
+import inquirer from "inquirer"; // use other way add module in package.json  "type":"module",
+import fs from "fs";
+import path from "path";
+import { generateMarkdown } from "./utils/generateMarkdown.js";
 
 ///Users/huizhao/bootcamp/README-Generator/utils/generateMarkdown.js
 
@@ -64,17 +64,17 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-
+  
 }
 
 // function to initialize program
 function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log("Generating README...");
-    fs.writeFile('README.md', generateMarkdown({ ...answers }), (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-    //writeToFile("README.md", generateMarkdown({ ...answers }));
+    // fs.writeFile('README.md', generateMarkdown({ ...answers }), (err) =>
+    //   err ? console.log(err) : console.log('Successfully created index.html!')
+    // );
+    writeToFile("README1.md", generateMarkdown({ ...answers }));
   });
 }
 
