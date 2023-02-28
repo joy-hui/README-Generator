@@ -1,9 +1,9 @@
 
-# a
+# Test
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
 
-a
+README-Generator
 
 ## Table of Contents 
 
@@ -23,11 +23,11 @@ a
 
 The command should be run to install dependencies:
 
-* a
+* npm i
 
 ## Usage
 
-a
+name
 
 ## License
 
@@ -35,16 +35,16 @@ MIT
   
 ## Contributing
 
-a
+help you README-Generator
 
 ## Tests
 
 The command should be run to run tests:
 
-* a
+* npm test
 
 ## Questions
 
-If you have any questions please contact me, my email address is a. 
-This is my github: [a](https://github.com/a/).
+If you have any questions please contact me, my email address is tongwandou432@gamil.com. 
+This is my github: [Joy](https://github.com/Joy/).
   
