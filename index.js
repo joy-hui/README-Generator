@@ -64,7 +64,12 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    // console.log(path.join(process.cwd(), fileName));
+    // return fs.writeFileSync(path.join(process.cwd(), fileName), data, (err) =>
+    //  err ? console.log(err) : console.log('Successfully created readme!'));
+    return fs.writeFile(path.join(process.cwd(), fileName), data, (err) =>
+      err ? console.log(err) : console.log('Successfully created!')
+    );
 }
 
 // function to initialize program
@@ -74,7 +79,7 @@ function init() {
     // fs.writeFile('README.md', generateMarkdown({ ...answers }), (err) =>
     //   err ? console.log(err) : console.log('Successfully created index.html!')
     // );
-    writeToFile("Generator-Readme.md", generateMarkdown({ ...answers }));
+    writeToFile("Generator-Readmea.md", generateMarkdown({ ...answers }));
   });
 }
 
