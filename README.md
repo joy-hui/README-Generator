@@ -29,7 +29,7 @@
 
 
 ## This is the link
-*  https://joy-hui.github.io/Password-Generator/
+*   https://joy-hui.github.io/README-Generator/
 
 
 
